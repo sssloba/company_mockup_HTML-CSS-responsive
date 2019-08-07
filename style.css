@@ -1,0 +1,761 @@
+/* GENERALS */
+
+* {
+    font-family: 'Open Sans', sans-serif;
+ 	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	position:relative;
+	width: 100%;
+}
+
+/*I DEO - BANNER */
+
+.banner {
+	width: 100%;
+	position: relative;
+}
+
+.first{
+	display: flex;
+	flex-direction: row;
+	align-content: space-between;
+	justify-content: space-between;
+	position: absolute;
+	top: 50px;
+    left: 20%;
+    width: 900px;
+	font-size: 24px;
+}
+
+.white {
+	color:white;
+}
+
+.red {
+	color:#f76128;
+}
+
+.naslov {
+	position: absolute;
+	margin: 0 auto;
+	text-align: center;
+    top: 150px;
+    right: 27%;
+    font-size: 70px;
+}
+
+.podnaslov {
+	font-size: 22px;
+    top: 230px;
+    right: 25%;
+}
+
+.dugmad {
+	display: flex;
+    position: absolute;
+    right: calc(50% - 230px);
+    top: 400px;
+}
+
+.dugme {
+    background-color: rgba(0,0,0,0);
+    border-radius: 5px;
+    width: 200px;
+    margin: 10px 15px;
+    padding: 10px 60px;
+    border: solid white 0.5px;
+}
+
+.dugme:hover {
+	background-color: #f76128;
+	border: none;
+	cursor: pointer;
+}
+
+.downarrow {
+	position: relative;
+    bottom: 60px;
+    left: calc(50% - 17px);
+}
+
+/* II DEO */
+
+section {
+	/*position: absolute;*/
+	width: 1200px;
+	margin: 50px auto;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+nav li {
+	width: 200px;
+}
+
+.krug {
+	background-color: rgba(0,0,0,0);
+    border: solid #3b4046 0.5px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.imgnav {
+    display: block;
+    margin: 20% auto;
+}
+	
+h3, p, h2 {
+	text-align: center;
+	padding: 10px 0;
+}	
+
+/* III DEO */
+
+#newsform {
+	position: relative;
+	width: 100%;
+	height: 200px;
+	background-image: url('img/newsletter-background.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.news {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	width: 1200px;
+	height: 200px;
+	margin: 0 auto;
+}	
+
+.emaildugme {
+	display: inline-block;
+	z-index: 10;
+	width: 700px;
+	border-radius: 5px;
+	outline: none;
+}
+
+input {
+	margin: auto 10px;
+	height: 39px;
+}
+
+.subscribe {
+	border-radius: 5px;
+    width: 200px;
+    margin: auto 10px;
+    padding: 10px 60px;
+    background-color: #f76128;
+    cursor: pointer;
+    border: none;
+}
+
+/* IV DEO, VII DEO */
+
+h2 {
+	font-size: 40px;
+}
+
+/* V DEO */
+
+.portfolio {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.abazoo {
+	visibility: hidden;
+	position: absolute;
+	width: 360px;
+	height: 360px;
+	background-color: #f76128;
+	top: 0;
+	margin: 15px 0;
+	border-radius: 5px;
+	opacity: 0.85;
+	z-index: 10;
+}
+
+.abazoo h3 {
+	font-size: 28px;
+	padding-top: 40px;
+}
+
+.images:hover > .abazoo {
+	visibility: visible;
+}
+
+section > img {
+	margin: 15px;
+}
+
+.images img {
+	border: none;
+}
+
+.abazoobutton {
+	background-color: white;
+    border-radius: 5px;
+    width: 200px;
+    margin: 40px 80px;
+    padding: 10px 40px;
+    border: solid white 0.5px;
+    font-size: 16px;
+    cursor:pointer;
+}
+
+.showmore {
+	display: block;
+    padding: 10px 30px;
+    border-color: black;
+    margin: 0 auto;
+}
+
+/* VI DEO */
+
+div {
+	position: relative;
+	padding-top: 15px;
+}
+
+.testimonials {
+	position: absolute;
+	z-index: 100;
+	left: calc(50% - 50px);
+	top: 100px;
+	width: 100px;
+}
+
+.testtext {
+	display: block;
+	position: absolute;
+	width: 100%;
+	z-index: 100;
+	padding: 0;
+	top: 60%;
+	font-style: italic;
+	font-size: 20px;
+}
+
+.testtext p {
+	padding: 0;
+}
+
+p.testtext {
+	font-size: 16px;
+	margin-top: 80px;
+	font-style: normal;
+}
+
+.leftarrow {
+
+	position: absolute;
+	z-index: 100;
+    top: 40%;
+    left: 250px;
+}
+.rightarrow {
+	position: absolute;
+	z-index: 100;
+    top: 40%;
+    left: calc(100% - 318px);
+}
+
+/* VIII DEO */
+
+.teams {
+  	display: flex;
+  	flex-direction: row;
+  	justify-content: space-between;
+  	text-align: center;
+}
+
+.teamtwo {
+  	height: 284px;
+  	cursor: pointer;
+}
+
+.teamtwo:hover {
+  	transform: scale(1.15);
+  	background-color: #f76128;
+  	padding-bottom: 10px;
+}
+
+.icons {
+	width: 200px;
+}
+
+.hide {
+	position: relative;
+	margin: 0 auto;
+    width: 125px;
+    overflow: hidden;
+    padding-top: 0;
+}    
+
+a {
+	position: absolute;
+	top: 0;
+	cursor: pointer;
+	display: block;
+	width: 40px;
+	height: 35px;
+}
+
+.twit {
+	margin-left: 40px;
+}
+
+.gplus {
+	margin-left: 80px;
+}
+
+h4 {
+  	padding: 20px;
+  	font-size: 18px;
+}
+
+/* IX DEO */
+
+#dots {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.dot {
+  	height: 20px;
+  	width: 20px;
+  	border-radius: 50%;
+  	background-color: gray;
+  	margin: 10px;
+}
+
+.dottwo {
+	height: 25px;
+  	width: 25px;
+  	border-radius: 50%;
+  	background-color: #f76128;
+  	margin: 10px;
+}
+
+/* X DEO */
+
+#forma {
+	width: 100%;
+	background-image: url("img/contact-background.jpg");
+	background-size: 100% 100%;
+	padding: 50px 0 70px 0;
+	margin-bottom: 0;
+}
+
+#contactform {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 600px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+.forminput, textarea {
+	display: inline-block;
+	width: 280px;
+	margin: 10px;
+	border-radius: 5px;
+	outline: none;
+}
+
+textarea {
+	width: 100%;
+}
+
+/* XI DEO */
+
+footer {
+	background-color: #555;
+	height: 70px;
+}
+
+footer p {
+	position: relative;
+	top: 15px;
+	right: 20%;
+}
+
+.icon {
+	width: 45%;
+}
+
+
+
+@media all and (max-width: 1240px) {
+
+	.first {
+		width: 800px;
+	}
+
+	.naslov {
+		font-size: 50px;
+	}
+
+	.podnaslov {
+		font-size: 22px;
+		right: 28%;
+	}
+
+	.dugmad {
+		top: 340px;
+	}
+
+	section {
+		width: 1100px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+
+	.testimonials {
+		top: 70px;
+	}
+}
+
+@media all and (max-width: 1120px) {
+
+	.first {
+		width: 600px;
+		left: 18%;
+		top: 40px;
+	}
+
+	.naslov {
+		top: 130px;	
+	}
+
+	.podnaslov {
+		
+		top: 200px;
+	}
+
+	.dugmad {
+		top: 280px;
+	}
+
+	section {
+		width: 950px;
+		margin: 20px;
+	}
+
+	.news {
+		width: 950px;
+	}
+
+	.images img {
+		width: 300px;
+	}
+
+	.abazoo {
+		width: 300px;
+		height: 300px;
+	}
+
+	.abazoobutton {
+		margin: 40px 50px;
+	}
+
+	.testimonials {
+		top: 40px;
+	}
+
+	p.testtext {
+    font-size: 14px;
+    margin-top: 50px;
+	}
+}
+
+@media all and (max-width: 1000px) {
+
+	.first {
+		font-size: 20px;
+		top: 15px;
+	}
+
+	.naslov {
+		font-size: 40px;
+		top: 90px;
+	}
+
+	.podnaslov {
+		top: 140px;
+		right: 22%;
+	}
+
+	.dugmad {
+		top: 220px;
+	}
+
+	section {
+		width: 800px;
+		margin: 10px;
+	}
+
+	#newsform {
+		height: 120px;
+	}
+
+	.news {
+		width: 800px;
+		height: 100px;
+	}
+
+	.emaildugme {
+		width: 500px;
+	}
+
+	h3, p, h2 {
+		padding: 2px 0;
+	}
+
+	p {
+		font-size: 12px;
+	}
+
+	h2 {
+		font-size: 28px;
+	}
+
+	.images img {
+		width: 250px;
+	}
+
+	.abazoo {
+		width: 250px;
+		height: 250px;
+	}
+
+	.abazoobutton {
+		margin: 40px 25px;
+	}
+
+	li > img, .teamtwo {
+		height: 200px;
+	}
+}
+
+@media all and (max-width: 830px) {
+
+	.first {
+		width: 500px;
+		font-size: 16px;
+	}
+
+	.naslov {
+		font-size: 34px;
+		top: 70px;
+	}	
+
+	.podnaslov {
+		top: 120px;
+	}
+
+	.dugmad {
+		top: 170px;
+		right: calc(50% - 200px);
+	}
+
+	.dugme {
+		width: 170px;
+		padding: 10px 30px;
+	}
+
+	div {
+		padding-top: 0;
+	}
+
+	section {
+		width: 700px;
+	}
+
+	.krug {
+		width: 100px;
+	    height: 100px;
+	}
+
+	h2 {
+		font-size: 18px;
+	}
+
+	h3 {
+		font-size: 16px;
+	}
+
+	#newsform {
+		height: 100px;
+	}
+
+	.news {
+		width: 600px;
+	}
+
+	.emaildugme {
+		width: 350px;
+	}
+
+	.subscribe {
+		width: 170px;
+		padding: 10px 30px;
+	}
+	
+	.portfolio {
+		justify-content: space-around;
+		margin: 20px auto;
+	}
+
+	.abazoo {
+		margin: 0;
+	}
+
+	.testimonials {
+    	top: 10px;
+	}
+
+	.leftarrow {
+		left: 50px;
+	}
+
+	.rightarrow {
+		left: calc(100% - 50px);
+	}
+
+	h4 {
+		font-size: 15px;
+		padding-top: 10px;
+	}
+}
+
+@media all and (max-width: 730px) {
+
+	.first {
+    	width: 350px;
+	}
+
+	.naslov {
+	    font-size: 30px;
+	    top: 45px;
+	}
+
+	.podnaslov {
+		top: 85px;
+		right: 18%;
+	}
+
+	.dugmad {
+		top: 135px;
+		right: calc(50% - 180px);
+	}
+
+	.dugme {
+	    width: 150px;
+	    padding: 5px 0px;
+	    
+	}
+
+	.downarrow {
+		position: absolute;
+    	top: 220px;
+		width: 24px;
+		left: calc(50% - 12px);
+	}
+
+	section {
+		width: 470px;
+		margin: 0 auto;
+	}
+
+	h3 {
+		font-size: 14px;
+	}
+
+	p {
+		font-size: 11px;
+	}
+
+	.news {
+	    width: 470px;
+	}
+
+	h2 {
+		font-size: 16px;
+	}
+
+	.showmore {
+		margin-bottom: 10px;
+	}
+
+
+	.testimonials {
+		left: calc(50% - 35px);
+	    width: 60px;
+	}
+
+	.testtext {
+		top: 50%;
+	}
+
+	p.testtext {
+	    font-size: 11px;
+	    margin-top: 40px;
+	}
+
+	.teams {
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	.teams > li {
+		margin-bottom: 10px;
+	}
+
+	.dot {
+	    height: 15px;
+	    width: 15px;
+	}
+
+	.dottwo {
+	    height: 20px;
+	    width: 20px;
+	}
+
+	#forma {
+		padding: 10px 0 0 0;
+	}
+
+	#contactform {
+		width: 470px;
+	}
+
+	.forminput{
+		width: 215px;
+	}
+
+
+}
